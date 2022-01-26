@@ -10,7 +10,6 @@ import SwiftUI
 struct Home: View {
     
     @State var showPopup: Bool = false
-    
     var body: some View {
         
         NavigationView{
@@ -27,6 +26,7 @@ struct Home: View {
                         NavigationLink(task.taskTitle){
                             Text(task.taskDescription)
                                 .navigationTitle("Destination")
+                                .navigationBarBackButtonHidden(true)
                         }
                     }
                 }

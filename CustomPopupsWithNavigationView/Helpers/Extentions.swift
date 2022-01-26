@@ -22,6 +22,10 @@ extension View{
                     // MARK: Geometry Reader for reading Container Frame
                     GeometryReader{ proxy in
                         
+                        Color.yellow
+                            .opacity(0.15)
+                            .ignoresSafeArea()
+                        
                         let size = proxy.size
                         
                         NavigationView{
