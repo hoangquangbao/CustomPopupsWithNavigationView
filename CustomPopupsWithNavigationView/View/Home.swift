@@ -15,7 +15,9 @@ struct Home: View {
         NavigationView{
             
             Button("Show Popup"){
-                showPopup.toggle()
+                withAnimation {
+                    showPopup.toggle()
+                }
             }
             .navigationTitle("Custom Popup's")
             .popupNavigationView(horizontalPadding: 40, show: $showPopup) {
@@ -26,12 +28,32 @@ struct Home: View {
                         NavigationLink(task.taskTitle){
                             Text(task.taskDescription)
                                 .navigationTitle("Destination")
-                                .navigationBarBackButtonHidden(true)
                         }
                     }
                 }
                 .navigationTitle("Popup Navigation")
                 .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "plus")
+                        }
+
+                    }
+                    
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button {
+                            withAnimation {
+                                showPopup.toggle()
+                            }
+                        } label: {
+                            Text("Close")
+                        }
+
+                    }
+                }
             }
             
         }

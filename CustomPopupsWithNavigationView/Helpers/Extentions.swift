@@ -22,7 +22,7 @@ extension View{
                     // MARK: Geometry Reader for reading Container Frame
                     GeometryReader{ proxy in
                         
-                        Color.yellow
+                        Color.green
                             .opacity(0.15)
                             .ignoresSafeArea()
                         
