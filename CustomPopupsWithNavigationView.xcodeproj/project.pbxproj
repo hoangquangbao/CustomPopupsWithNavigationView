@@ -16,6 +16,7 @@
 		063470D627A0EF460064909A /* CustomPopupsWithNavigationViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063470D527A0EF460064909A /* CustomPopupsWithNavigationViewUITestsLaunchTests.swift */; };
 		063470E627A0FAAE0064909A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063470E527A0FAAE0064909A /* Home.swift */; };
 		063470E827A0FAEF0064909A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063470E727A0FAEF0064909A /* Task.swift */; };
+		063470EA27A103010064909A /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063470E927A103010064909A /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		063470D527A0EF460064909A /* CustomPopupsWithNavigationViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupsWithNavigationViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		063470E527A0FAAE0064909A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		063470E727A0FAEF0064909A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		063470E927A103010064909A /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		063470E427A0EFCB0064909A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				063470E927A103010064909A /* Extentions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			files = (
 				063470E827A0FAEF0064909A /* Task.swift in Sources */,
 				063470BB27A0EF440064909A /* ContentView.swift in Sources */,
+				063470EA27A103010064909A /* Extentions.swift in Sources */,
 				063470E627A0FAAE0064909A /* Home.swift in Sources */,
 				063470B927A0EF440064909A /* CustomPopupsWithNavigationViewApp.swift in Sources */,
 			);
