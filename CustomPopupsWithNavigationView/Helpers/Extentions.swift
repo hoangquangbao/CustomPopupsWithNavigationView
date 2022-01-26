@@ -14,6 +14,7 @@ extension View{
     func popupNavigationView<Content: View>(horizontalPadding: CGFloat = 40, show: Binding<Bool>, @ViewBuilder content: @escaping ()->Content) -> some View {
         
         return self
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             .overlay {
                 
                 if show.wrappedValue{
